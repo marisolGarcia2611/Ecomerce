@@ -1,0 +1,24 @@
+p{font-size: 12px;}
+.card-products{
+    background-color: rgb(231, 231, 231);
+    border-radius: 30px;
+    /* height: 500px; */
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.card-products:hover{
+    -webkit-transform: scale(1.1) !important;
+    transform: scale(1.04) !important;
+}
+
+.card-products img{
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 30px;
+}
+
+.compra span{font-size: 12px;}
+.compra button{font-size: 12px;width: 100%;}
+.compra select{font-size: 12px;}

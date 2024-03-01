@@ -1,0 +1,310 @@
+<div class="bg-light">
+    <button class="btn border-0 text-danger"><i class="fa-solid fa-xmark"></i> Cancelar</button>
+</div>
+
+<style>
+    .bloque1{height: 68%;}
+    .bloque2{height: 32%;}
+    .pd_responsive{padding: 50px;}
+    .size_scroll1{height: 50vh;}
+    .size_scroll2{height: 40vh;}
+    .size_scroll3{height: 64vh;}
+    
+    
+     @media screen and (max-width:2000px) { 
+        .principal_position{position: fixed;margin: 0px!important;height: 100vh!important;width: 100%!important;right: 0;}
+        .bloque1{height: 70%;}
+        .bloque2{height: 32%;}
+        .pd_responsive{padding: 50px;}
+        .size_scroll1{height: 50vh;}
+        .size_scroll2{height: 40vh;}
+    }
+
+    @media screen and (max-width:1050px) { 
+        .bloque1{height: 62%;}
+        .bloque2{height: 40%;}
+        .pd_responsive{padding: 30px;}
+        .size_scroll1{height: 40vh;}
+        .size_scroll2{height: 25vh;}
+    }
+
+
+    @media screen and (max-width:1000px) { 
+        .principal_position{position: fixed;margin: 0px!important;height: 100vh!important;width: 100%!important;right: 0;}
+        .bloque1{height: 78%;}
+        .bloque2{height: 22%;}
+        .pd_responsive{padding: 40px;}
+        .size_scroll1{height: 62vh;}
+        .size_scroll2{height: 50vh;}
+    }
+
+
+    @media screen and (max-width:750px) { 
+        .principal_position{position: absolute;margin: 0px!important;height: 100vh!important;width: 100%!important;right: 0;}
+        .bloque1{height: 70%;}
+        .bloque2{height: 32%;}
+        .pd_responsive{padding: 50px;}
+        .size_scroll1{height: 50vh;}
+        .size_scroll2{height: 40vh;}
+    }
+
+    @media screen and (max-width:450px) { 
+        .pd_responsive{padding: 20px;}
+    }
+</style>
+
+<div class="principal_position">
+    <div class="row bloque1">
+        <div class="col-md-3 d-none d-md-block bg-grayLight p-3">
+            <h6>Busqueda</h6>
+    
+            <div class="form-floating mb-1">
+                <input type="email" class="form-control rounded-5" id="floatingInput" placeholder="name@example.com">
+                <label for="floatingInput">Search <i class="fa-solid fa-magnifying-glass"></i></label>
+            </div>
+    
+            <span  class="text-secondary" style="font-size: 11px;">Resultados (1)</span>
+    
+            <div class="container">
+                <div class="scrollcard size_scroll1">
+                    <div class="card bg-grayLight push shadow border-0">
+                        <div class="row  p-2">
+                            <img class="col-md-5 img_responsive" src="../../../assets/products/adidas.webp" alt="porduct">
+        
+                            <div class="col" style="padding: 10px 10px 0px 0px;">
+                                <h4>$150.00</h4>
+        
+                                <div class="lista">
+                                    <div class="input-group">
+                                        <span class="input-group-text btn btn-secondary p-2 border_left"><i class="fa-solid fa-plus"></i></span>
+                                        <input class="form-control" placeholder="00" type="number">
+                                        <span class="input-group-text btn btn-secondary p-2 border_right"><i class="fa-solid fa-minus"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div class="card-footer btn bg-primary text-light" style="font-size: 11px;"> <i class="fa-solid fa-plus"></i> Agregar</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="col d-none d-md-block p-3">
+            <h6>Detalle De Compra</h6>
+            <div class="scrollcard size_scroll3">
+                <div class="card animate__animated animate__backInDown push rounded-4 p-2">
+                    <div class="row">
+                        <img class="rounded-4" style="max-height: 150px!important;object-fit: cover;" src="../../../assets/products/tenis.jpg" alt="porduct">
+                        <small class="fs-5 fw-bold">Tenis Basicos | Lacoste</small>
+
+                        <div class="col">
+                            <small class="text-secondary">CODE 287490214</small>
+                            <h1 class="mt-1">$150.00</h1>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="detalle text-end">
+                                <div class="input-group mt-1">
+                                    <span class="input-group-text btn btn-secondary p-2 border_left"><i class="fa-solid fa-plus"></i></span>
+                                    <input class="form-control" placeholder="00" type="number">
+                                    <span class="input-group-text btn btn-secondary p-2 border_right"><i class="fa-solid fa-minus"></i></span>
+                                </div>
+                                <button class="btn btn-danger rounded-4 mt-2"><i class="fa-solid fa-trash"></i> Eliminar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="col-md-3 bg-grayLight p-3">
+            <h6>Saldo De Compra</h6>
+            <div  class="mt-2 mb-3 bg-body rounded-4 p-2 container">
+                <div class="scrollcard size_scroll2">
+                    <div class="row">
+                        <div class="col-md-8"><p class="text-truncate fw-light">Blusa Denim <b class="fw-bold text-success">x3</b></p></div>
+                        <div class="col-md-4"><p class="text-truncate fw-light">$150.00</p></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-8"><p class="text-truncate fw-light">Blusa Denim <b class="fw-bold text-success">x3</b></p></div>
+                        <div class="col-md-4"><p class="text-truncate fw-light">$150.00</p></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-8"><p class="text-truncate fw-light">Blusa Denim <b class="fw-bold text-success">x3</b></p></div>
+                        <div class="col-md-4"><p class="text-truncate fw-light">$150.00</p></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-8"><p class="text-truncate fw-light">Blusa Denim <b class="fw-bold text-success">x3</b></p></div>
+                        <div class="col-md-4"><p class="text-truncate fw-light">$150.00</p></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-8"><p class="text-truncate fw-light">Blusa Denim <b class="fw-bold text-success">x3</b></p></div>
+                        <div class="col-md-4"><p class="text-truncate fw-light">$150.00</p></div>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="container">
+                <div class="row">
+                    <div class="col"><h5 class="text-truncate fw-light">Sub Total&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp; $150.00</h5></div>
+                </div>
+                <div class="row">
+                    <div class="col"><h5 class="text-truncate fw-light">Descuento&nbsp; &nbsp;&nbsp; &nbsp; $150.00</h5></div>
+                </div>
+                <div class="row">
+                    <div class="col"><h5 class="text-truncate fw-light">Iva&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; $150.00</h5></div>
+                </div>
+                <div class="row">
+                    <div class="col"><h3 class="text-truncate">Total&nbsp; &nbsp; $150.00</h3></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="row bloque2">
+        <div class="col bg-grayLight">
+            <div class="row container">
+                <img class="col-md-2 mb-2 img_responsive  d-none d-md-block" src="../../../assets/products/adidas.webp" alt="porduct">
+
+                <div class="col">
+                    <div class="row compra text-center">
+                        <div class="col-md-4 mt-3 d-none d-md-block"><h3>$150.00</h3></div>
+                        <div class="col-md-6 mt-3 mb-2">
+                            <div class="input-group">
+                                <span class="input-group-text btn btn-secondary p-2 border_left"><i class="fa-solid fa-plus"></i></span>
+                                <input class="form-control" placeholder="00" type="number">
+                                <span class="input-group-text btn btn-secondary p-2 border_right"><i class="fa-solid fa-minus"></i></span>
+                            </div>
+                        </div>
+
+                        <img src="../../../assets/codebar.png" class="code_bar  d-none d-md-block" alt="47374104092">
+                    </div>
+                </div>
+
+                <div class="col-md-4 text-end">
+                    <div class="mb-2 mt-2">
+                        <input type="number" class="form-control rounded-5 fs-5" id="floatingInput" placeholder="Add for Key Code">
+                    </div>
+
+                    <button class="btn btn-success rounded-5 mb-2" style="font-size: 12px;"><i class="fa-solid fa-plus"></i> Agregar</button>                
+                </div>
+            </div>
+        </div>
+    
+        <!-- Button trigger modal -->
+        <div class="col-md-3 bg-primary btn text-center text-light pd_responsive push" data-bs-toggle="modal" data-bs-target="#exampleModalToggle">
+            <h1 class="fw-light">Pagar</h1>
+        </div>
+    </div>
+</div>
+
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+      <div class="modal-content">
+        <div class="modal-header border-0 m-0">
+          <h2 class="modal-title fw-light" id="exampleModalToggleLabel">¿Cuál es su metodo de pago?</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <div class="modal-body" style="padding: 0px 60px 60px 60px;">
+          <div class="container">
+            <div class="row">
+                <div class="col p-2">
+                    <div class="text-center p-5 rounded-5 push btn border-0" style="width: 100%;background-color: rgb(243, 243, 243);" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">
+                        <h1 style="color: rgb(0, 168, 70);font-size: 100px;"><i class="fa-solid fa-dollar"></i></h1>
+                        <span class="fw-light fs-5" style="color: rgb(0, 168, 70);">Efectivo</span>
+                    </div>
+                </div>
+
+                <div class="col p-2">
+                    <div class="text-center p-5 rounded-5 btn border-0 push" style="width: 100%;background-color: rgb(240, 240, 240);" data-bs-target="#exampleModalToggle3" data-bs-toggle="modal">
+                        <h1 style="color: rgb(61, 112, 223);font-size: 100px;"><i class="fa-solid fa-credit-card"></i></h1>
+                        <span class="fw-light fs-5" style="color: rgb(61, 112, 223);">Tarjeta</span>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Efective Modal -->
+  <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+      <div class="modal-content">
+        <div class="modal-header border-0">
+          <button class="btn text-success fs-5 fw-light border-0" data-bs-target="#exampleModalToggle" data-bs-toggle="modal"><i class="fa-solid fa-chevron-left"></i> Pago en Efectivo</button>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="container">
+            <div class="row mb-3" style="margin-top: -20px!important;">
+                <div>
+                    <div class="text-center">
+                        <img src="../../../assets/gifts/cash.gif" width="150px" alt="card">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mb-5">
+                <div class="col p-2 text-center">
+                    <h1 class="fw-light">$100.82</h1>
+                    <h5 class="text-success fw-light">Total Pago</h5>
+                </div>
+                <div class="col p-2 text-center">
+                    <input type="number" class="form-control rounded-5 fs-4 mb-1">
+                    <h5 class="text-primary fw-light">Recibio</h5>
+                </div>
+                <div class="col p-2 text-center">
+                    <h1 class="fw-light">$-</h1>
+                    <h5 class="text-danger fw-light">Cambio</h5>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer border-0">
+          <button class="btn border-0 text-success fs-3 fw-light" data-bs-dismiss="modal" aria-label="Close"><i class="fa-solid fa-check"></i> Finalizar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Card Modal -->
+  <div class="modal fade" id="exampleModalToggle3" aria-hidden="true" aria-labelledby="exampleModalToggleLabel3" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+      <div class="modal-content">
+        <div class="modal-header border-0">
+          <button class="btn text-primary fs-5 fw-light border-0" data-bs-target="#exampleModalToggle" data-bs-toggle="modal"><i class="fa-solid fa-chevron-left"></i> Pago con Tarjeta</button>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="container">
+            <div class="row mb-1" style="margin-top: -10px!important;">
+                <div class="col"></div>
+                <div class="col text-center">
+                    <h1 class="fw-light">$100.82</h1>
+                    <h5 class="text-success fw-light">Total Pago</h5>
+                    <hr>
+                    <h1>Inserte Tarjeta</h1>
+                    <div class="text-center">
+                        <img src="../../../assets/gifts/card2.gif" width="150px" alt="card">
+                    </div>
+                </div>
+                <div class="col"></div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer border-0">
+            <button class="btn border-0 text-primary fs-3 fw-light" data-bs-dismiss="modal" aria-label="Close"><i class="fa-solid fa-check"></i> Finalizar</button>
+        </div>
+      </div>
+    </div>
+  </div>

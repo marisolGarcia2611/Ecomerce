@@ -1,1 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
+.push{
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.push:hover{
+    -webkit-transform: scale(1.1) !important;
+    transform: scale(1.04) !important;
+}

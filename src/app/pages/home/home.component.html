@@ -1,0 +1,50 @@
+<div class="container text-center">
+    <div class="row p-3 mb-3">
+        <div class="card text-bg-dark portada" style="background-color: rgba(240, 248, 255, 0)!important;border: none;">
+            <img src="../../../assets/photo2.jpg" class="card-img portada" alt="...">
+            <div class="position-relative">
+                <div class="position-absolute bottom-0 start-0">
+                    <h1 class="card-title fw-light animate__animated animate__bounceInLeft">&nbsp; Products</h1>
+                </div>
+
+                <div class="position-absolute bottom-0 end-0 p-3">
+                    <button class="btn btn-muted"><i class="fa-solid fa-pen"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mb-5 text-center">
+        <div>
+            <div class="btn-group card-menu" role="group" aria-label="Basic example">
+                @for(cat of categories; track cat.id){
+                    <button type="button" class="btn btn-ico push animate__animated animate__wobble" (click)="categorie = cat.id"><i class="{{cat.iconName}}"></i></button>
+                }
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-floating mb-3">
+                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                        <label for="floatingInput">Search <i class="fa-solid fa-magnifying-glass"></i></label>
+                    </div>
+                </div>
+
+                <div class="col-md-6 text-start">
+                    <h6 class="mt-3"> Filters
+                        <button class="btn border-0 push"><i class="fa-solid fa-list"></i></button>
+                        <button class="btn border-0 push"><i class="fa-solid fa-arrow-up-wide-short"></i></button>
+                        <button class="btn border-0 push"><i class="fa-solid fa-arrow-down-wide-short"></i></button>
+                        <button class="btn border-0 push"><i class="fa-solid fa-arrows-rotate"></i></button>
+                    </h6>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <app-products catId = '{{categorie}}'></app-products>
+</div>

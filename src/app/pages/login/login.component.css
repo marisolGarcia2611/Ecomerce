@@ -1,0 +1,64 @@
+
+.position{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+}
+
+.fondo{
+    height: 100%;
+    object-fit: cover;
+}
+
+input{
+    border-radius: 30px;
+    background-color: aliceblue;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.btn-gradient{
+    background-color: #d169ba;
+    background-image: linear-gradient(98deg, #c35ead 0%, #7f58f6 100%);
+    border: none;
+    padding: 10px 50px 10px 50px;
+    border-radius: 20px;
+    color: #fff;
+    font-family: 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    
+}
+
+.btn-gradient:hover{
+    background-color: #7f58f6;
+    background-image: linear-gradient(98deg, #7f58f6 0%, #c35ead 100%);
+    border: none;
+    padding: 10px 50px 10px 50px;
+    border-radius: 20px;
+    color: #fff;
+    -webkit-transform: scale(1.1) !important;
+    transform: scale(1.04) !important;
+}
+
+a{
+    color: rgb(114, 114, 114);
+    cursor: pointer;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    background-color: black;
+    color: white;
+    border-radius: 15px;
+    -webkit-transform: scale(1.1) !important;
+    transform: scale(1.04) !important;
+}
+
+
+/* background-image: url(./images/back.jpg);
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;
+width: 100%;
+height: 100%; */

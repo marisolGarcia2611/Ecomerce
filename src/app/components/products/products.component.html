@@ -1,0 +1,47 @@
+<div class="row">
+    <div class="text-center mb-3">
+    </div>
+    @for(product of products; track product.id){
+        <!-- animate__animated animate__lightSpeedInLeft -->
+        <div class="col-md-4 mb-5 animate__animated animate__bounceInLeft">
+            <div class="card-products">
+                    <img src="{{product.urlImage}}" alt="">
+
+                    <div class="text-start p-3">
+                        <div class="position-relative">
+                            <div class="position-absolute top-0 end-0">
+                                <button class="btn btn-danger rounded-5"><i class="fa-regular fa-heart"></i></button>
+                            </div>
+                        </div>
+
+                        <div>
+                            <h5>{{product.name}}</h5>
+                            <h6><b>Sizes</b>  {{product.medida}}</h6>
+                            <p>{{product.descripcion}}</p>
+                            <h5>$ {{product.precio}}</h5>
+                        </div>
+
+                        <div class="compra text-center mt-2">
+                            <div class="input-group mb-3">
+                                <select class="form-select form-select-sm " style="border-radius: 20px 0px 0px 20px;">
+                                    <option selected>Open this select menu</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select>
+                                <span class="input-group-text btn btn-warning" style="border-radius: 0px 20px 20px 0px;"><i class="fa-solid fa-cart-plus"></i> Add to cart</span>
+                            </div>
+                            <button class="btn btn-primary rounded-5"><i class="fa-solid fa-dollar"></i> Buy now</button>
+                        </div>
+                        
+                        <div class="text-end mt-3">
+                                <small>{{product.created}}</small>
+                        </div>
+                    </div>
+            </div>
+        </div>
+      
+    }
+</div>

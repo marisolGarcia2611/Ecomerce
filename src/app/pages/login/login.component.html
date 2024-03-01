@@ -1,0 +1,39 @@
+<div class="row position">
+    <img class="col-md-8 fondo d-none d-md-block" src="../../../assets/photo1.webp" alt="">
+    <div class="col-md-4">
+        <div class="container">
+            <div class="text-center mt-5">
+                <img class="animate__animated animate__rubberBand" src="../../../assets/icos/logo3.png" width="150px" height="150px" alt="">
+            </div>
+
+
+            <div class="mt-4 text-start p-3">
+                <h4 class="fw-light">Hola
+                    @if (date.getHours() >= 5 && date.getHours() < 13) {Buenos Días
+                    }@else if(date.getHours() >= 13 && date.getHours() < 20){ Buenas Tardes
+                    }@else{ Buenas Noches}, Bienvenido a MDesing & Developers</h4>
+            </div>
+
+            <form class="needs-validation" novalidate>
+                <div class="form-floating mb-3">
+                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                    <label for="floatingInput">Email address</label>
+                </div>
+
+                <div class="form-floating mb-3">
+                    <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                    <label for="floatingPassword">Password</label>
+                </div>
+                
+                <div class="mb-5 form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                </div>
+
+                <div class="text-center">
+                    <button type="submit" class="btn btn-gradient fw-light" (click)="fav(logIn = true)">Log In</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
