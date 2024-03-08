@@ -1,15 +1,13 @@
-import { Component, Input } from '@angular/core';
-import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
+import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-products',
+  selector: 'app-compra-product',
   standalone: true,
-  imports: [RouterOutlet,RouterLink, RouterLinkActive],
-  templateUrl: './products.component.html',
-  styleUrl: './products.component.css'
+  imports: [],
+  templateUrl: './compra-product.component.html',
+  styleUrl: './compra-product.component.css'
 })
-export class ProductsComponent {
-  @Input()  catId = '';
+export class CompraProductComponent {
   products = [
     {
       id:1,

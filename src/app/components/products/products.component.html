@@ -1,45 +1,79 @@
 <div class="row">
     <div class="text-center mb-3">
+        {{catId}}
     </div>
     @for(product of products; track product.id){
         <!-- animate__animated animate__lightSpeedInLeft -->
         <div class="col-md-4 mb-5 animate__animated animate__bounceInLeft">
             <div class="card-products">
-                    <img src="{{product.urlImage}}" alt="">
+                <img src="{{product.urlImage}}" alt="" style="cursor: pointer;" routerLink="/Details">
 
-                    <div class="text-start p-3">
-                        <div class="position-relative">
-                            <div class="position-absolute top-0 end-0">
-                                <button class="btn btn-danger rounded-5"><i class="fa-regular fa-heart"></i></button>
-                            </div>
-                        </div>
-
-                        <div>
-                            <h5>{{product.name}}</h5>
-                            <h6><b>Sizes</b>  {{product.medida}}</h6>
-                            <p>{{product.descripcion}}</p>
-                            <h5>$ {{product.precio}}</h5>
-                        </div>
-
-                        <div class="compra text-center mt-2">
-                            <div class="input-group mb-3">
-                                <select class="form-select form-select-sm " style="border-radius: 20px 0px 0px 20px;">
-                                    <option selected>Open this select menu</option>
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                    <option value="4">4</option>
-                                    <option value="5">5</option>
-                                </select>
-                                <span class="input-group-text btn btn-warning" style="border-radius: 0px 20px 20px 0px;"><i class="fa-solid fa-cart-plus"></i> Add to cart</span>
-                            </div>
-                            <button class="btn btn-primary rounded-5"><i class="fa-solid fa-dollar"></i> Buy now</button>
-                        </div>
-                        
-                        <div class="text-end mt-3">
-                                <small>{{product.created}}</small>
+                <div class="text-start p-3">
+                    <div class="position-relative">
+                        <div class="position-absolute top-0 end-0">
+                            <button class="btn btn-danger rounded-5"><i class="fa-regular fa-heart"></i></button>
                         </div>
                     </div>
+
+                    <div class="row mb-2">
+                        <h5>{{product.name}}</h5>
+                        <h5>$ {{product.precio}}</h5>
+                    </div>
+
+                    <div class="row mb-2">
+                        <div class="row">
+                            <div class="col options">
+                                <h6>Sizes</h6>
+                                    <input type="radio" class="btn-check" name="options" id="1{{product.id}}">
+                                    <label class="btn btn-outline-secondary" for="1{{product.id}}">SM</label>
+
+                                    <input type="radio" class="btn-check" name="options" id="2{{product.id}}">
+                                    <label class="btn btn-outline-secondary" for="2{{product.id}}">MD</label>
+
+                                    <input type="radio" class="btn-check" name="options" id="3{{product.id}}">
+                                    <label class="btn btn-outline-secondary" for="3{{product.id}}">LG</label>
+
+                                    <input type="radio" class="btn-check" name="options" id="4{{product.id}}">
+                                    <label class="btn btn-outline-secondary" for="4{{product.id}}">XL</label>
+                            </div>
+                            
+                            <div class="col options">
+                                <h6>Colors</h6>
+                                    <input type="radio" class="btn-check" name="options" id="color1{{product.id}}">
+                                    <label class="btn btn-outline-secondary" for="color1{{product.id}}">SM</label>
+
+                                    <input type="radio" class="btn-check" name="options" id="color2{{product.id}}">
+                                    <label class="btn btn-outline-secondary" for="color2{{product.id}}">MD</label>
+
+                                    <input type="radio" class="btn-check" name="options" id="color3{{product.id}}">
+                                    <label class="btn btn-outline-secondary" for="color3{{product.id}}">LG</label>
+
+                                    <input type="radio" class="btn-check" name="options" id="color4{{product.id}}">
+                                    <label class="btn btn-outline-secondary" for="color4{{product.id}}">XL</label>
+                            </div>
+                        </div>
+                    </div>
+            
+
+                    <div class="compra text-center mt-4">
+                        <div class="input-group mb-2">
+                            <select class="form-select form-select-sm" style="border-radius: 10px 0px 0px 10px;">
+                                <option selected>Quantity</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                            <span class="input-group-text btn btn-dark"><i class="fa-solid fa-cart-plus"></i> Add to cart</span>
+                        </div>
+                        <button class="btn btn-outline-dark rounded-2"><i class="fa-solid fa-dollar"></i> Buy now</button>
+                    </div>
+                
+                    <div class="text-end mt-3">
+                            <small>{{product.created}}</small>
+                    </div>
+                </div>
             </div>
         </div>
       

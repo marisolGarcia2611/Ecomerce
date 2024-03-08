@@ -1,0 +1,188 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-8">
+            <div class="row">
+                <div class="col-md-2">
+                    @for(product of products; track product.id){
+                        
+                        @if(product.img1 != "null"){
+                            <img class="shadow mb-2" (click)="principalImg = product.img1" src="{{product.img1}}" width="80%;height;" alt="">
+                        }
+
+                        @if(product.img2 != "null"){
+                            <img class="shadow mb-2" (click)="principalImg = product.img2" src="{{product.img2}}" width="80%;height;" alt="">
+                        }
+
+                        @if(product.img3 != "null"){
+                            <img class="shadow mb-2" (click)="principalImg = product.img3" src="{{product.img3}}" width="80%;height;" alt="">
+                        }
+
+                        @if(product.img4 != "null"){
+                            <img class="shadow mb-2" (click)="principalImg = product.img4" src="{{product.img4}}" width="80%;height;" alt="">
+                        }
+
+                    }
+                </div>
+                <div class="col">
+                    @if(principalImg != ""){
+                         <img src="{{principalImg}}" width="80%;height:100px!important;" alt="">
+                    }@else{
+                        <img src="../../../assets/products/tenis.avif" width="80%;height:100px!important;" alt="">
+                    }
+                </div>
+            </div>  
+            
+            
+        </div>
+
+        <div class="col-md-4">
+            <div class="bg_lightGray p-3">
+                <small class="text-secondary">CODE ND999SCS</small>
+                <div class="text-start p-3">
+                    <div class="position-relative">
+                        <div class="position-absolute top-0 end-0">
+                            <button class="btn btn-danger rounded-5"><i class="fa-regular fa-heart"></i></button>
+                        </div>
+                    </div>
+
+                    <div class="row mb-2 text-start">
+                        <h5>Tenis Clasic - Lacoste Basico</h5>
+                        <h3>$ 00.00</h3>
+                        <span class="btn border-0 text-primary">Ver los medios de pago</span>
+                    </div>
+
+                    <div class="row mb-2">
+                        <div class="row">
+                            <div class="col options">
+                                <h6>Sizes</h6>
+                                    <input type="radio" class="btn-check" name="options" id="size1">
+                                    <label class="btn btn-outline-secondary" for="size1">SM</label>
+
+                                    <input type="radio" class="btn-check" name="options" id="size2">
+                                    <label class="btn btn-outline-secondary" for="size2">MD</label>
+
+                                    <input type="radio" class="btn-check" name="options" id="size3">
+                                    <label class="btn btn-outline-secondary" for="size3">LG</label>
+
+                                    <input type="radio" class="btn-check" name="options" id="size4">
+                                    <label class="btn btn-outline-secondary" for="size4">XL</label>
+                            </div>
+                            
+                            <div class="col options">
+                                <h6>Colors</h6>
+                                    <input type="radio" class="btn-check" name="options" id="color1">
+                                    <label class="btn btn-outline-secondary" for="color1">SM</label>
+
+                                    <input type="radio" class="btn-check" name="options" id="color2">
+                                    <label class="btn btn-outline-secondary" for="color2">MD</label>
+
+                                    <input type="radio" class="btn-check" name="options" id="color3">
+                                    <label class="btn btn-outline-secondary" for="color3">LG</label>
+
+                                    <input type="radio" class="btn-check" name="options" id="color4">
+                                    <label class="btn btn-outline-secondary" for="color4">XL</label>
+                            </div>
+                        </div>
+                    </div>
+            
+
+                    <div class="compra text-center mt-4">
+                        <div class="input-group mb-2">
+                            <select class="form-select form-select-sm" style="border-radius: 10px 0px 0px 10px;">
+                                <option selected>Quantity</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                            <span class="input-group-text btn btn-dark"><i class="fa-solid fa-cart-plus"></i> Add to cart</span>
+                        </div>
+                        <button class="btn btn-outline-dark rounded-2"><i class="fa-solid fa-dollar"></i> Buy now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg_lightGray p-4">
+                <h6 class="mb-2">Formas de Envio</h6>
+
+                <div class="row rounded-2 shadow p-2 mb-2 push">
+                    <div class="col"><p>Envio Inmediato <b class="text-success">$ 100.00</b></p></div>
+                    <div class="col-md-2 text-end text-primary"><i class="fa-solid fa-truck-fast"></i></div>
+                </div>
+
+                <div class="row rounded-2 shadow p-2 mb-2 push">
+                    <div class="col"><p>Envio Regular <b class="text-success">Gratis</b></p></div>
+                    <div class="col-md-2 text-end text-primary"><i class="fa-regular fa-clock"></i></div>
+                </div>
+
+                <small class="text-secondary">VENDEDOR DJK-SNIKERS</small>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-8">
+            <h6>Opiniones del producto</h6>
+            <div class="row">
+                <div class="col-md-4">
+                    <h1 class="fw-bold text-primary">3.0 <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></h1>
+
+                    <div>
+                        <span>1 <i class="fa-solid fa-star"></i></span>
+                          <div class="progress mb-2" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar" style="width: 0%"></div>
+                          </div>
+
+                          <span>2 <i class="fa-solid fa-star"></i></span>
+                          <div class="progress mb-2" role="progressbar" aria-label="Basic example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar" style="width: 25%"></div>
+                          </div>
+
+                          <span>3 <i class="fa-solid fa-star"></i></span>
+                          <div class="progress mb-2" role="progressbar" aria-label="Basic example" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar" style="width: 50%"></div>
+                          </div>
+
+                          <span>4 <i class="fa-solid fa-star"></i></span>
+                          <div class="progress mb-2" role="progressbar" aria-label="Basic example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar" style="width: 75%"></div>
+                          </div>
+
+                          <span>5 <i class="fa-solid fa-star"></i></span>
+                          <div class="progress mb-2" role="progressbar" aria-label="Basic example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                            <div class="progress-bar" style="width: 100%"></div>
+                          </div>
+                    </div>
+                </div>
+                <div class="col-md-8 container">
+                    <div class="rounded-4 p-2">
+                        <div class=" scrollcard p-3">
+                            <div class="row card  mb-2 rounded-3">
+                                <h6 class="fw-bold text-primary"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></h6>
+                                <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur natus repudiandae ut corrupti minus quo laborum .</span>
+                            </div>
+
+                            <div class="row card  mb-2 rounded-3">
+                                <h6 class="fw-bold text-primary"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></h6>
+                                <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur natus repudiandae ut corrupti minus quo laborum .</span>
+                            </div>
+
+                            <div class="row card  mb-2 rounded-3">
+                                <h6 class="fw-bold text-primary"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><i class="fa-regular fa-star"></i></h6>
+                                <span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur natus repudiandae ut corrupti minus quo laborum .</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+                <img src="../../../assets/products/tarjets.jpg" style="width: 80%;" alt="">
+        </div>
+    </div>
+
+    <div class="row">
+        <app-products ></app-products>
+    </div>
+</div>

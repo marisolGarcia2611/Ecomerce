@@ -1,0 +1,19 @@
+.total_fonts{font-family:sans-serif;}
+
+.scrollArea{padding: 20px;scroll-behavior: auto;overflow-y: auto;overflow-x: hidden;height: 80vh;}
+.scrollArea::-webkit-scrollbar {width:  15px;     /* Tamaño del scroll en vertical */height: 5px;}
+.scrollArea::-webkit-scrollbar-thumb {  background: #dddddd;    border-radius: 15px;}
+/* Cambiamos el fondo y agregamos una sombra cuando esté en hover */
+.scrollArea::-webkit-scrollbar-thumb:hover {
+    background: #9e9e9e;  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);}
+/* Cambiamos el fondo cuando esté en active */
+.scrollArea::-webkit-scrollbar-thumb:active {background-color: #999999;}
+/* Ponemos un color de fondo y redondeamos las esquinas del track */
+.scrollArea::-webkit-scrollbar-track {background: #ececec;border-radius: 10px; }
+/* Cambiamos el fondo cuando esté en active o hover */
+.scrollArea::-webkit-scrollbar-track:hover, .scrollArea::-webkit-scrollbar-track:active { background: #d4d4d4;}
+
+select{font-size: 9px;}
+input{font-size: 9px;}
+span{font-size: 9px;}
+small{font-size: 11px;}

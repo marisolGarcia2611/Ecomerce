@@ -1,0 +1,40 @@
+h1{ font-size:70px;}
+p{ font-size:12px;}
+small{ font-size:12px;color: rgb(87, 87, 87);}
+
+input{
+    border-radius: 30px;
+    background-color: aliceblue;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.portada{
+    border-radius: 30px;
+    height: 35vh;
+    object-fit: cover;
+    background-color: rgba(240, 248, 255, 0)!important;
+}
+
+.btn-muted{
+    background-color: rgba(166, 166, 166, 0.541);
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 100%;
+}
+
+.btn-muted:hover{
+    background-color: rgba(199, 199, 199, 0.541);
+    color: rgb(255, 255, 255);
+    border: none;
+} 
+
+.card-menu{background-color: #F5F5F5;border-radius: 50px;}
+.btn-ico{ font-size:20px;color: #434343;border: none;padding: 5px 30px 5px 30px;}
+.btn-ico:hover{ background-color: rgb(190, 190, 190);border-radius: 30px!important;font-size:20px;color: rgb(235, 235, 235);border: none;}
+
+.headerImg{
+    width:100%;
+    height:200px;
+    background-image:url(../../../assets/icos/2.png), linear-gradient(red, blue);
+  
+}

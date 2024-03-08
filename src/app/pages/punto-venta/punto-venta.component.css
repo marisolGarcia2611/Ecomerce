@@ -9,13 +9,14 @@
 .lista span{font-size: 7px;}
 .lista button{font-size: 12px;width: 100%;}
 .lista input{font-size: 10px;}
+.lista select{font-size: 10px;}
 
 .detalle span{font-size: 12px;}
 .detalle button{font-size: 12px;}
 .detalle input{font-size: 12px;}
 
 
-.img_responsive{border-radius: 20px;object-fit: cover;padding: 10px;max-height:200px;}
+.img_responsive{border-radius: 20px;object-fit: cover;padding: 10px;}
 .border_left{border-radius: 15px 0px 0px 15px;}
 .border_right{border-radius: 0px 15px 15px 0px;}
 .code_bar{max-width: 130px!important;text-align: center;}
@@ -33,6 +34,20 @@
 .scrollcard::-webkit-scrollbar-track {background: #e1e1e1;border-radius: 4px; }
 /* Cambiamos el fondo cuando esté en active o hover */
 .scrollcard::-webkit-scrollbar-track:hover, .scrollcard::-webkit-scrollbar-track:active { background: #d4d4d4;}
+
+
+.scrollcardDark{padding: 10px;scroll-behavior: auto;overflow-y: auto;overflow-x: hidden;}
+.scrollcardDark::-webkit-scrollbar {width:  8px;     /* Tamaño del scroll en vertical */height: 8px;}
+.scrollcardDark::-webkit-scrollbar-thumb {  background: #a5a5a570;    border-radius: 4px;}
+/* Cambiamos el fondo y agregamos una sombra cuando esté en hover */
+.scrollcardDark::-webkit-scrollbar-thumb:hover {
+    background: #9e9e9e;  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);}
+/* Cambiamos el fondo cuando esté en active */
+.scrollcardDark::-webkit-scrollbar-thumb:active {background-color: #57575737;}
+/* Ponemos un color de fondo y redondeamos las esquinas del track */
+.scrollcardDark::-webkit-scrollbar-track {background: #2f2f2f;border-radius: 4px; }
+/* Cambiamos el fondo cuando esté en active o hover */
+.scrollcardDark::-webkit-scrollbar-track:hover, .scrollcardDark::-webkit-scrollbar-track:active { background: #67676760;}
 
 
 

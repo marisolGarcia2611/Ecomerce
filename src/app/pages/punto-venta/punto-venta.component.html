@@ -55,6 +55,7 @@
 
 <div class="principal_position">
     <div class="row bloque1">
+        <!-- Busqueda -->
         <div class="col-md-3 d-none d-md-block bg-grayLight p-3">
             <h6>Busqueda</h6>
     
@@ -63,86 +64,108 @@
                 <label for="floatingInput">Search <i class="fa-solid fa-magnifying-glass"></i></label>
             </div>
     
-            <span  class="text-secondary" style="font-size: 11px;">Resultados (1)</span>
-    
+            
             <div class="container">
+                <span  class="text-secondary" style="font-size: 11px;">Resultados (1)</span>
+    
                 <div class="scrollcard size_scroll1">
-                    <div class="card bg-grayLight push shadow border-0">
-                        <div class="row  p-2">
-                            <img class="col-md-5 img_responsive" src="../../../assets/products/adidas.webp" alt="porduct">
-        
-                            <div class="col" style="padding: 10px 10px 0px 0px;">
-                                <h4>$150.00</h4>
-        
-                                <div class="lista">
-                                    <div class="input-group">
-                                        <span class="input-group-text btn btn-secondary p-2 border_left"><i class="fa-solid fa-plus"></i></span>
-                                        <input class="form-control" placeholder="00" type="number">
-                                        <span class="input-group-text btn btn-secondary p-2 border_right"><i class="fa-solid fa-minus"></i></span>
-                                    </div>
+                    <div class="card bg-body push shadow border-0">
+                        <div class="card-body p-2">
+                            <div class="row">
+                                <div class="col-md-4"> 
+                                    <img class="img_responsive" src="../../../assets/products/adidas.webp" style="width: 100px; height: 100px; object-fit: cover;" alt="porduct">
+                                </div>
+                            
+                                <div class="col" style="padding: 10px 10px 0px 0px;"> 
+                                    <span>Tenis Clasic - Lacoste Basico</span>  
+                                    <h5>$150.00</h5>
+                                </div>
+                            </div>
+
+                            <div class="row lista">
+                                <div class="col input-group mb-2">
+                                    <span class="input-group-text btn btn-outline-dark p-2"><i class="fa-solid fa-plus"></i></span>
+                                    <input class="form-control border-dark" placeholder="00" type="number">
+                                    <span class="input-group-text btn btn-outline-dark p-2"><i class="fa-solid fa-minus"></i></span>
+                                </div>
+
+                                <div class="col">
+                                    <select class="form-select border-dark" name="" required>
+                                        <option value="SM">SM</option>
+                                        <option value="MD">MD</option>
+                                        <option value="LG">LG</option>
+                                        <option value="XL">XL</option>
+                                    </select>
                                 </div>
                             </div>
                         </div>
-        
-                        <div class="card-footer btn bg-primary text-light" style="font-size: 11px;"> <i class="fa-solid fa-plus"></i> Agregar</div>
+                        <div class="card-footer btn bg-dark text-light" style="font-size: 11px;"> <i class="fa-solid fa-plus"></i> Agregar</div>
                     </div>
                 </div>
             </div>
         </div>
     
+        <!-- Detalle de Compra -->
         <div class="col d-none d-md-block p-3">
             <h6>Detalle De Compra</h6>
             <div class="scrollcard size_scroll3">
-                <div class="card animate__animated animate__backInDown push rounded-4 p-2">
-                    <div class="row">
-                        <img class="rounded-4" style="max-height: 150px!important;object-fit: cover;" src="../../../assets/products/tenis.jpg" alt="porduct">
-                        <small class="fs-5 fw-bold">Tenis Basicos | Lacoste</small>
-
-                        <div class="col">
-                            <small class="text-secondary">CODE 287490214</small>
-                            <h1 class="mt-1">$150.00</h1>
-                        </div>
-
-                        <div class="col-md-4">
-                            <div class="detalle text-end">
-                                <div class="input-group mt-1">
-                                    <span class="input-group-text btn btn-secondary p-2 border_left"><i class="fa-solid fa-plus"></i></span>
-                                    <input class="form-control" placeholder="00" type="number">
-                                    <span class="input-group-text btn btn-secondary p-2 border_right"><i class="fa-solid fa-minus"></i></span>
-                                </div>
-                                <button class="btn btn-danger rounded-4 mt-2"><i class="fa-solid fa-trash"></i> Eliminar</button>
-                            </div>
+                <div class="row shadow-sm push p-2 mb-2">
+                    <div class="col-md-2 text-center d-none d-md-block">
+                        <img src="../../../assets/icos/1.png" style="max-height: 100px;max-width: 100px;object-fit: cover;" alt="product">
+                    </div>
+            
+                    <div class="col-md-4 text-start">
+                        <h6>Caje de Vale</h6>
+                        <h5>$30.00 <b style="font-size: 10px;" class="text-secondary">(Importe)</b></h5>
+                    </div>
+            
+                    <div class="col text-start">
+                        <div>
+                            <button class=" btn btn-dark" data-bs-target="#canjeValeModal" data-bs-toggle="modal">Comenzar Canje</button>
                         </div>
                     </div>
+            
+            
+                    
+                    <div class="col-md-2 text-end">
+                        <h6>                                
+                            <button type="button" class="btn text-dark"><i class="fa-solid fa-trash"></i></button>
+                        </h6>
+                    </div>
                 </div>
+                
+                <app-compra-product></app-compra-product>
             </div>
         </div>
     
-        <div class="col-md-3 bg-grayLight p-3">
+        <!-- Saldo de Compra -->
+        <div class="col-md-3 bg-dark text-light p-3">
             <h6>Saldo De Compra</h6>
-            <div  class="mt-2 mb-3 bg-body rounded-4 p-2 container">
-                <div class="scrollcard size_scroll2">
+            <div  class="mt-2 mb-3  p-2 container">
+                <div class="scrollcardDark size_scroll2">
                     <div class="row">
                         <div class="col-md-8"><p class="text-truncate fw-light">Blusa Denim <b class="fw-bold text-success">x3</b></p></div>
-                        <div class="col-md-4"><p class="text-truncate fw-light">$150.00</p></div>
+                        <div class="col-md-4"><p class="text-truncate fw-bold">$150.00</p></div>
                     </div>
                     <div class="row">
                         <div class="col-md-8"><p class="text-truncate fw-light">Blusa Denim <b class="fw-bold text-success">x3</b></p></div>
-                        <div class="col-md-4"><p class="text-truncate fw-light">$150.00</p></div>
+                        <div class="col-md-4"><p class="text-truncate fw-bold">$150.00</p></div>
                     </div>
                     <div class="row">
                         <div class="col-md-8"><p class="text-truncate fw-light">Blusa Denim <b class="fw-bold text-success">x3</b></p></div>
-                        <div class="col-md-4"><p class="text-truncate fw-light">$150.00</p></div>
+                        <div class="col-md-4"><p class="text-truncate fw-bold">$150.00</p></div>
                     </div>
                     <div class="row">
                         <div class="col-md-8"><p class="text-truncate fw-light">Blusa Denim <b class="fw-bold text-success">x3</b></p></div>
-                        <div class="col-md-4"><p class="text-truncate fw-light">$150.00</p></div>
+                        <div class="col-md-4"><p class="text-truncate fw-bold">$150.00</p></div>
                     </div>
                     <div class="row">
                         <div class="col-md-8"><p class="text-truncate fw-light">Blusa Denim <b class="fw-bold text-success">x3</b></p></div>
-                        <div class="col-md-4"><p class="text-truncate fw-light">$150.00</p></div>
+                        <div class="col-md-4"><p class="text-truncate fw-bold">$150.00</p></div>
                     </div>
+                    
                 </div>
+                <hr>
             </div>
 
             
@@ -163,38 +186,53 @@
         </div>
     </div>
     
+    <!-- Lectura de codigos -->
     <div class="row bloque2">
         <div class="col bg-grayLight">
             <div class="row container">
-                <img class="col-md-2 mb-2 img_responsive  d-none d-md-block" src="../../../assets/products/adidas.webp" alt="porduct">
+                <div class="col-md-2 col-3">
+                    <img class="img_responsive" src="../../../assets/products/adidas.webp" style="width: 120px;height: 120px;" alt="porduct">
+                </div>
+                
 
                 <div class="col">
-                    <div class="row compra text-center">
-                        <div class="col-md-4 mt-3 d-none d-md-block"><h3>$150.00</h3></div>
-                        <div class="col-md-6 mt-3 mb-2">
-                            <div class="input-group">
-                                <span class="input-group-text btn btn-secondary p-2 border_left"><i class="fa-solid fa-plus"></i></span>
-                                <input class="form-control" placeholder="00" type="number">
-                                <span class="input-group-text btn btn-secondary p-2 border_right"><i class="fa-solid fa-minus"></i></span>
+                    <div class="row compra text-start">
+                        <div class="col-md-5 col-5 mt-3">
+                            <h6>Tenis Clasic - Lacoste Basico</h6>
+                            <h4>$150.00</h4>
+                            <span class="text-secondary">CODE 934HIJFAS9</span>
+                        </div>
+                        <div class="col-md-6 col-7 mt-3 mb-2">
+                            <div class="mt-2">
+                                <select class="form-select border-dark" name="" required>
+                                    <option value="SM">SM</option>
+                                    <option value="MD">MD</option>
+                                    <option value="LG">LG</option>
+                                    <option value="XL">XL</option>
+                                </select>
+                            </div>
+
+                            <div class="input-group mt-3">
+                                <span class="input-group-text btn btn-outline-dark p-2"><i class="fa-solid fa-plus"></i></span>
+                                <input class="form-control border-dark" placeholder="00" type="number">
+                                <span class="input-group-text btn btn-outline-dark p-2"><i class="fa-solid fa-minus"></i></span>
                             </div>
                         </div>
-
-                        <img src="../../../assets/codebar.png" class="code_bar  d-none d-md-block" alt="47374104092">
                     </div>
                 </div>
 
                 <div class="col-md-4 text-end">
-                    <div class="mb-2 mt-2">
+                    <div class="mb-2 mt-3">
                         <input type="number" class="form-control rounded-5 fs-5" id="floatingInput" placeholder="Add for Key Code">
                     </div>
 
-                    <button class="btn btn-success rounded-5 mb-2" style="font-size: 12px;"><i class="fa-solid fa-plus"></i> Agregar</button>                
+                    <button class="btn btn-dark rounded-2 mb-2" style="font-size: 12px;"><i class="fa-solid fa-plus"></i> Agregar</button>                
                 </div>
             </div>
         </div>
     
         <!-- Button trigger modal -->
-        <div class="col-md-3 bg-primary btn text-center text-light pd_responsive push" data-bs-toggle="modal" data-bs-target="#exampleModalToggle">
+        <div class="col-md-3 bg-secondary btn text-center text-light pd_responsive push rounded-0" data-bs-toggle="modal" data-bs-target="#medioPagoModal">
             <h1 class="fw-light">Pagar</h1>
         </div>
     </div>
@@ -202,12 +240,12 @@
 
 
 
-  <!-- Modal -->
-  <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+  <!-- Modal de Medio de Pago -->
+  <div class="modal fade" id="medioPagoModal" aria-hidden="true" aria-labelledby="medioPagoModalLabel" tabindex="-1">
     <div class="modal-dialog modal-dialog-centered modal-xl">
       <div class="modal-content">
         <div class="modal-header border-0 m-0">
-          <h2 class="modal-title fw-light" id="exampleModalToggleLabel">¿Cuál es su metodo de pago?</h2>
+          <h2 class="modal-title fw-light" id="medioPagoModalLabel">¿Cuál es su metodo de pago?</h2>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
 
@@ -215,14 +253,14 @@
           <div class="container">
             <div class="row">
                 <div class="col p-2">
-                    <div class="text-center p-5 rounded-5 push btn border-0" style="width: 100%;background-color: rgb(243, 243, 243);" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">
+                    <div class="text-center p-5 rounded-5 push btn border-0" style="width: 100%;background-color: rgb(243, 243, 243);" data-bs-target="#pagoEfectivoModal" data-bs-toggle="modal">
                         <h1 style="color: rgb(0, 168, 70);font-size: 100px;"><i class="fa-solid fa-dollar"></i></h1>
                         <span class="fw-light fs-5" style="color: rgb(0, 168, 70);">Efectivo</span>
                     </div>
                 </div>
 
                 <div class="col p-2">
-                    <div class="text-center p-5 rounded-5 btn border-0 push" style="width: 100%;background-color: rgb(240, 240, 240);" data-bs-target="#exampleModalToggle3" data-bs-toggle="modal">
+                    <div class="text-center p-5 rounded-5 btn border-0 push" style="width: 100%;background-color: rgb(240, 240, 240);" data-bs-target="#pagoTarjetaModal" data-bs-toggle="modal">
                         <h1 style="color: rgb(61, 112, 223);font-size: 100px;"><i class="fa-solid fa-credit-card"></i></h1>
                         <span class="fw-light fs-5" style="color: rgb(61, 112, 223);">Tarjeta</span>
                     </div>
@@ -236,11 +274,11 @@
 
 
   <!-- Efective Modal -->
-  <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+  <div class="modal fade" id="pagoEfectivoModal" aria-hidden="true" aria-labelledby="medioPagoModalLabel2" tabindex="-1">
     <div class="modal-dialog modal-dialog-centered modal-xl">
       <div class="modal-content">
         <div class="modal-header border-0">
-          <button class="btn text-success fs-5 fw-light border-0" data-bs-target="#exampleModalToggle" data-bs-toggle="modal"><i class="fa-solid fa-chevron-left"></i> Pago en Efectivo</button>
+          <button class="btn text-success fs-5 fw-light border-0" data-bs-target="#medioPagoModal" data-bs-toggle="modal"><i class="fa-solid fa-chevron-left"></i> Pago en Efectivo</button>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
@@ -278,11 +316,11 @@
 
 
   <!-- Card Modal -->
-  <div class="modal fade" id="exampleModalToggle3" aria-hidden="true" aria-labelledby="exampleModalToggleLabel3" tabindex="-1">
+  <div class="modal fade" id="pagoTarjetaModal" aria-hidden="true" aria-labelledby="medioPagoModalLabel3" tabindex="-1">
     <div class="modal-dialog modal-dialog-centered modal-xl">
       <div class="modal-content">
         <div class="modal-header border-0">
-          <button class="btn text-primary fs-5 fw-light border-0" data-bs-target="#exampleModalToggle" data-bs-toggle="modal"><i class="fa-solid fa-chevron-left"></i> Pago con Tarjeta</button>
+          <button class="btn text-primary fs-5 fw-light border-0" data-bs-target="#medioPagoModal" data-bs-toggle="modal"><i class="fa-solid fa-chevron-left"></i> Pago con Tarjeta</button>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
@@ -304,6 +342,65 @@
         </div>
         <div class="modal-footer border-0">
             <button class="btn border-0 text-primary fs-3 fw-light" data-bs-dismiss="modal" aria-label="Close"><i class="fa-solid fa-check"></i> Finalizar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Canje Vale Modal -->
+  <div class="modal fade" id="canjeValeModal" aria-hidden="false" aria-labelledby="medioPagoModalLabel" tabindex="-1">
+    <div class="modal-dialog modal-fullscreen">
+      <div class="modal-content">
+        <div class="modal-header border-0 m-0">
+          <h2 class="modal-title fw-light" id="medioPagoModalLabel">Canje de vale</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <div class="modal-body" style="padding: 0px 30px 30px 30px;">
+            <div class="row">
+                <div class="col-2">
+                  <nav id="navbar-example3" class="h-100 flex-column align-items-stretch pe-4 border-end">
+                    <nav class="nav nav-pills flex-column">
+                      <button class="nav-link border-primary rounded-2" (click)="datosVale = 1">Datos de Vale</button>
+                      <button class="nav-link border-primary rounded-2" >Captura Cliente</button>
+                      <button class="nav-link border-primary rounded-2" >Subir Archivos</button>
+                      <button class="nav-link border-primary rounded-2" >Canje</button>
+                    </nav>
+                  </nav>
+                </div>
+              
+                <div class="col-10">
+                  <div data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-smooth-scroll="true" class="scrollspy-example-2" tabindex="0">
+                    @if(datosVale == 1){
+                        <app-datos-vale></app-datos-vale>
+                        <div class="text-end">
+                            <button class="btn btn-dark" (click)="datosVale = 0;capturaCli = 1">Enviar</button>
+                        </div>
+                    }
+
+                    @if(capturaCli == 1){
+                        <app-captura-cliente></app-captura-cliente>
+                        <div class="text-end">
+                            <button class="btn btn-dark" (click)="capturaCli = 0;subirDoc = 1">Enviar</button>
+                        </div>
+                    }
+
+                    @if(subirDoc == 1){
+                        <app-subir-archivos></app-subir-archivos>
+                        <div class="text-end">
+                            <button class="btn btn-dark" (click)="subirDoc = 0;canjeVal = 1">Enviar</button>
+                        </div>
+                    }
+
+                    @if(canjeVal == 1){
+                        <app-canje></app-canje>
+                        <div class="text-end">
+                            <button class="btn btn-dark" data-bs-dismiss="modal" aria-label="Close">Enviar</button>
+                        </div>
+                    }
+                  </div>
+                </div>
+              </div>
         </div>
       </div>
     </div>

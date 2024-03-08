@@ -1,7 +1,133 @@
 .ico{width: 40px;height: 40px;}
-.active{color: rgb(186, 0, 192)!important;font-size: 17px!important;}
+.active{color: #ba00c0!important;font-size: 17px!important;}
 a{-webkit-transition: all 0.3s ease;
-    transition: all 0.3s ease;}
+    transition: all 0.3s ease;
+border-bottom:1px solid #FFF;}
 a:hover{-webkit-transform: scale(1.3) !important;
     transform: scale(1.06) !important;
+    border-bottom:1px solid #ba00c0;
+}
+
+
+/* Navbar container */
+.navbar__fn {
+overflow: hidden;
+background-color: #ffffff;
+/* font-family: Arial; */
+font-size: 13px;
+box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.132);
+/* display: flex;}
+position: fixed;
+top: 0;
+left: 0;
+right: 0;
+z-index: 1; */
+}
+
+/* Links inside the navbar */
+.navbar__fn a {
+float: left;
+
+color: rgb(93, 93, 93);
+text-align: center;
+padding: 8px 8px;
+text-decoration: none;
+padding-bottom: 10px;
+}
+
+.img {
+float: left;
+font-size: 16px;
+color: rgb(93, 93, 93);
+text-align: center;
+padding: 8px 8px;
+margin: 5px;
+text-decoration: none;
+}
+
+/* The dropdown container */
+.dropdown__fn {
+float: left;
+overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown__fn .dropbtn__fn {
+font-size: 14px;
+border: none;
+outline: none;
+color: rgb(93, 93, 93);
+padding: 8px 8px;
+background-color: inherit;
+font: inherit; /* Important for vertical align on mobile phones */
+margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Add a red background color to navbar links on hover */
+.dropdown__fn a:hover, .dropdown__fn:hover .dropbtn__fn {
+color: rgb(106, 106, 106);
+border-top-left-radius:20px;
+border-top-right-radius:20px;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content__fn {
+padding: 10px;
+display: none;
+position: absolute;
+background-color: #f9f9f9;
+width: 100%;
+left: 0;
+box-shadow: 0px 10px 16px 0px rgba(70, 70, 70, 0.096);
+z-index: 1;
+}
+
+/* Mega Menu header, if needed */
+.dropdown-content__fn .header__fn {
+background: rgb(255, 255, 255);
+padding: 5px;
+padding-left: 5px;;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown__fn:hover .dropdown-content__fn {
+display: block;
+}
+
+/* Create three equal columns that floats next to each other */
+.column__fn {
+float: left;
+width: 23.33%;
+color: rgb(106, 106, 106);
+}
+
+/* Style links inside the columns */
+.column__fn a {
+float: none;
+color: rgb(165, 161, 161);
+text-decoration: none;
+display: block;
+text-align: left;
+-webkit-transition: all 0.3s ease;
+transition: all 0.3s ease;
+}
+
+/* Add a background color on hover */
+.column__fn a:hover {
+color: rgb(106, 106, 106);
+-webkit-transform: scale(1.1) !important;
+    transform: scale(1.04) !important;
+}
+
+/* Clear floats after the columns */
+.row__fn:after {
+content: "";
+display: table;
+clear: both;
+}
+@media screen and (max-width: 600px) {
+    .column__fn {
+    width: 100%;
+    height: auto;
+    }
 }
