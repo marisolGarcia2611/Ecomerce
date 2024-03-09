@@ -15,7 +15,7 @@ import {CanjeComponent} from '../../components/vales/canje/canje.component';
 })
 export class PuntoVentaComponent {
 
-  datosVale = 0;
+  datosVale = 1;
   capturaCli = 0;
   subirDoc = 0;
   canjeVal = 0;

@@ -3,6 +3,7 @@ import {PageNotFoundComponent} from './pages/page-not-found/page-not-found.compo
 import {LoginComponent} from './pages/login/login.component';
 import {MainComponent} from './pages/main/main.component';
 import {HomeComponent} from './pages/home/home.component';
+import {CatalogCategoriesComponent} from './pages/catalog-categories/catalog-categories.component';
 import {CatalogComponent} from './pages/catalog/catalog.component';
 import {ProductDetailsComponent} from './pages/product-details/product-details.component';
 import {ShoppingComponent} from './pages/shopping/shopping.component';
@@ -12,7 +13,8 @@ export const routes: Routes = [
     { path: 'LogIn', component: LoginComponent },
     { path: '', component: HomeComponent },
     { path: 'Main', component: MainComponent },
-    { path: 'Catalog', component: CatalogComponent },
+    { path: 'Product', component: CatalogComponent },
+    { path: 'PrincipalCatalog', component: CatalogCategoriesComponent },
     { path: 'Details', component: ProductDetailsComponent },
     { path: 'Shopping', component: ShoppingComponent },
     { path: 'PuntoVenta', component: PuntoVentaComponent },

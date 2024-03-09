@@ -11,16 +11,24 @@
 .lista input{font-size: 10px;}
 .lista select{font-size: 10px;}
 
+.busqueda span{font-size: 9px;}
+.busqueda button{font-size: 8px;width: 100%;}
+.busqueda input{font-size: 9px;}
+.busqueda select{font-size: 9px;}
+
 .detalle span{font-size: 12px;}
 .detalle button{font-size: 12px;}
 .detalle input{font-size: 12px;}
 
+.saldo p{font-size: 13px;margin-top: -8px;}
+.btn_enviar{font-size: 13px;}
 
 .img_responsive{border-radius: 20px;object-fit: cover;padding: 10px;}
 .border_left{border-radius: 15px 0px 0px 15px;}
 .border_right{border-radius: 0px 15px 15px 0px;}
 .code_bar{max-width: 130px!important;text-align: center;}
 
+.pointer_none{pointer-events: none;}
 
 .scrollcard{padding: 10px;scroll-behavior: auto;overflow-y: auto;overflow-x: hidden;}
 .scrollcard::-webkit-scrollbar {width:  8px;     /* Tamaño del scroll en vertical */height: 8px;}
@@ -48,6 +56,56 @@
 .scrollcardDark::-webkit-scrollbar-track {background: #2f2f2f;border-radius: 4px; }
 /* Cambiamos el fondo cuando esté en active o hover */
 .scrollcardDark::-webkit-scrollbar-track:hover, .scrollcardDark::-webkit-scrollbar-track:active { background: #67676760;}
+
+
+.bloque1{height: 75%;}
+.bloque2{height: 30%;}
+.pd_responsive{padding: 40px;}
+.size_scroll1{height: 50vh;}
+.size_scroll2{height: 35vh;}
+.size_scroll3{height: 68vh;}
+
+
+ @media screen and (max-width:2000px) { 
+    .principal_position{position: fixed;margin: 0px!important;height: 100vh!important;width: 100%!important;right: 0;}
+    .bloque1{height: 75%;}
+    .bloque2{height: 30%;}
+    .pd_responsive{padding: 40px;}
+    .size_scroll1{height: 50vh;}
+    .size_scroll2{height: 35vh;}
+}
+
+@media screen and (max-width:1050px) { 
+    .bloque1{height: 70%;}
+    .bloque2{height: 30%;}
+    .pd_responsive{padding: 30px;}
+    .size_scroll1{height: 40vh;}
+    .size_scroll2{height: 25vh;}
+}
+
+
+@media screen and (max-width:1000px) { 
+    .principal_position{position: fixed;margin: 0px!important;height: 100vh!important;width: 100%!important;right: 0;}
+    .bloque1{height: 78%;}
+    .bloque2{height: 22%;}
+    .pd_responsive{padding: 40px;}
+    .size_scroll1{height: 62vh;}
+    .size_scroll2{height: 50vh;}
+}
+
+
+@media screen and (max-width:750px) { 
+    .principal_position{position: absolute;margin: 0px!important;height: 100vh!important;width: 100%!important;right: 0;}
+    .bloque1{height: 70%;}
+    .bloque2{height: 32%;}
+    .pd_responsive{padding: 50px;}
+    .size_scroll1{height: 50vh;}
+    .size_scroll2{height: 40vh;}
+}
+
+@media screen and (max-width:450px) { 
+    .pd_responsive{padding: 20px;}
+}
 
 
 

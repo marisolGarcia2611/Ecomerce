@@ -1,21 +1,19 @@
-<nav class="navbar navbar-expand-lg">
+<nav class="navbar navbar-expand-lg p-0">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">
+      <div class="navbar-brand">
         <img class="ico" src="../../../assets/icos/logo3.png" alt="">
-      </a>
+      </div>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav  me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active link-purple" aria-current="page"  routerLink="">Home</a>
+            <a class="nav-link link-purple" routerLink="">Home</a>
           </li>
+
           <li class="nav-item">
-            <a class="nav-link" routerLink="/Catalog">Catálogo</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" routerLink="/PuntoVenta">Punto de Venta</a>
+            <a class="nav-link" routerLink="/PrincipalCatalog">Catálogo</a>
           </li>
 
           <li class="dropdown__fn">
@@ -25,17 +23,17 @@
                 <div class="row__fn">
                   <div class="column__fn">
                     <h5 style="font-size: 15px;">Ropa</h5><!--Categoria -->
-                    <a  href="#">Tops</a><!--Tipo -->
-                    <a  href="#">Bottoms</a><!--Tipo -->
-                    <a  href="#">Zapatos</a><!--Tipo -->
+                    <a  routerLink="/Product">Tops</a><!--Tipo -->
+                    <a  routerLink="/Product">Bottoms</a><!--Tipo -->
+                    <a  routerLink="/Product">Zapatos</a><!--Tipo -->
                   </div>
 
                   <div class="column__fn">
                     <h5 style="font-size: 15px;">Belleza</h5><!--Categoria -->
-                    <a href="#">MakeUp</a><!--Tipo -->
-                    <a href="#">Skyn Care</a><!--Tipo -->
-                    <a href="#">Fragancias</a><!--Tipo -->
-                    <a href="#">Accesorios de Belleza</a><!--Tipo -->
+                    <a routerLink="/Product">MakeUp</a><!--Tipo -->
+                    <a routerLink="/Product">Skyn Care</a><!--Tipo -->
+                    <a routerLink="/Product">Fragancias</a><!--Tipo -->
+                    <a routerLink="/Product">Accesorios de Belleza</a><!--Tipo -->
                   </div>
               </div>
               </div>
@@ -49,16 +47,16 @@
                 <div class="row__fn">
                   <div class="column__fn">
                     <h5 style="font-size: 15px;">Ropa</h5><!--Categoria -->
-                    <a  href="#">Tops</a><!--Tipo -->
-                    <a  href="#">Bottoms</a><!--Tipo -->
-                    <a  href="#">Zapatos</a><!--Tipo -->
+                    <a  routerLink="/Product">Tops</a><!--Tipo -->
+                    <a  routerLink="/Product">Bottoms</a><!--Tipo -->
+                    <a  routerLink="/Product">Zapatos</a><!--Tipo -->
                   </div>
 
                   <div class="column__fn">
                     <h5 style="font-size: 15px;">Belleza</h5><!--Categoria -->
-                    <a href="#">Fragancias</a><!--Tipo -->
-                    <a href="#">Skyn Care</a><!--Tipo -->
-                    <a href="#">Accesorios de Belleza</a><!--Tipo -->
+                    <a routerLink="/Product">Fragancias</a><!--Tipo -->
+                    <a routerLink="/Product">Skyn Care</a><!--Tipo -->
+                    <a routerLink="/Product">Accesorios de Belleza</a><!--Tipo -->
                   </div>
               </div>
               </div>
@@ -72,23 +70,27 @@
                 <div class="row__fn">
                   <div class="column__fn">
                     <h5 style="font-size: 15px;">Celulares y Telefonía</h5><!--Categoria -->
-                    <a  href="#">Celulares</a><!--Tipo -->
-                    <a  href="#">Reacopndicionados</a><!--Tipo -->
-                    <a  href="#">Accesorios</a><!--Tipo -->
-                    <a  href="#">Telefonía Fija</a><!--Tipo -->
+                    <a  routerLink="/Product">Celulares</a><!--Tipo -->
+                    <a  routerLink="/Product">Reacopndicionados</a><!--Tipo -->
+                    <a  routerLink="/Product">Accesorios</a><!--Tipo -->
+                    <a  routerLink="/Product">Telefonía Fija</a><!--Tipo -->
                   </div>
 
                   <div class="column__fn">
                     <h5 style="font-size: 15px;">Computación</h5><!--Categoria -->
-                    <a href="#">Laptops</a><!--Tipo -->
-                    <a href="#">Tablets</a><!--Tipo -->
-                    <a href="#">Comutadoras de Escritorio</a><!--Tipo -->
-                    <a href="#">Software</a><!--Tipo -->
-                    <a href="#">Accesorios</a><!--Tipo -->
+                    <a routerLink="/Product">Laptops</a><!--Tipo -->
+                    <a routerLink="/Product">Tablets</a><!--Tipo -->
+                    <a routerLink="/Product">Comutadoras de Escritorio</a><!--Tipo -->
+                    <a routerLink="/Product">Software</a><!--Tipo -->
+                    <a routerLink="/Product">Accesorios</a><!--Tipo -->
                   </div>
               </div>
               </div>
             </div>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/PuntoVenta">Punto de Venta</a>
           </li>
         </ul>
 

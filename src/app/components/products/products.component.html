@@ -6,16 +6,16 @@
         <!-- animate__animated animate__lightSpeedInLeft -->
         <div class="col-md-4 mb-5 animate__animated animate__bounceInLeft">
             <div class="card-products">
-                <img src="{{product.urlImage}}" alt="" style="cursor: pointer;" routerLink="/Details">
+                <img class="border" src="{{product.urlImage}}" alt="" style="cursor: pointer;"  routerLink="/Details">
 
                 <div class="text-start p-3">
                     <div class="position-relative">
                         <div class="position-absolute top-0 end-0">
-                            <button class="btn btn-danger rounded-5"><i class="fa-regular fa-heart"></i></button>
+                            <button class="btn btn-danger" style="border-radius: 100%;"><i class="fa-regular fa-heart"></i></button>
                         </div>
                     </div>
 
-                    <div class="row mb-2">
+               <div class="row mb-2" style="width: 95%;">
                         <h5>{{product.name}}</h5>
                         <h5>$ {{product.precio}}</h5>
                     </div>

@@ -12,7 +12,7 @@ import {MainComponent} from './pages/main/main.component';
 export class AppComponent {
   title = 'ecomerce';
   username = "mgarcia";
-  @Input() logIn = true;
+  @Input() logIn = false;
 
   getFavorite(logIn:boolean){
     this.logIn = logIn;//pasamos la infomacion que recibimos a la variable que hicimos

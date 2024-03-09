@@ -1,1 +1,45 @@
-<p>subir-archivos works!</p>
+<div class="container">
+    <div class="text-center" style="padding: 0px 50px 0px 50px;">
+        <div class="row mb-4">
+            <label for="file1" class="drop-container1 mt-2">
+                <span class="drop-title1">Subir Vale</span>
+                <small>Archivo importado PDF</small>
+                <input type="file" name="valera"class="validaPDF" required>
+                <div class="valid-feedback">
+                    ¡Se ve bien!
+                    </div>
+                    <div class="invalid-feedback">
+                    Por favor, completa la información requerida.
+                    </div>
+            </label>
+        </div>
+
+        <div class="row">
+            <label for="file1" class="drop-container1 mt-2">
+                <span class="drop-title1">Subir Comprobante de Identidad</span>
+                <small>Archivo importado PDF</small>
+                <input type="file" name="valera"class="validaPDF" required>
+                <div class="valid-feedback">
+                    ¡Se ve bien!
+                    </div>
+                    <div class="invalid-feedback">
+                    Por favor, completa la información requerida.
+                    </div>
+            </label>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    $('.validaPDF').on('change', function(){
+    var ext = $( this ).val().split('.').pop();
+    if ($( this ).val() != '') {
+        if(ext == "pdf"){
+        }else{
+        $( this ).val('');
+        swal("¡Archivo no valido!","Solo se permiten archivos PDF","warning", {buttons: false,timer: 3000});
+        }
+    }
+});
+</script>

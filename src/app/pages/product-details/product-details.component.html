@@ -2,32 +2,32 @@
     <div class="row">
         <div class="col-md-8">
             <div class="row">
-                <div class="col-md-2">
+                <div class="col-md-2 mt-3">
                     @for(product of products; track product.id){
                         
                         @if(product.img1 != "null"){
-                            <img class="shadow mb-2" (click)="principalImg = product.img1" src="{{product.img1}}" width="80%;height;" alt="">
+                            <img class="shadow mb-2 img_min rounded-2 border m-1" (click)="principalImg = product.img1" style="cursor: pointer;" src="{{product.img1}}" alt="">
                         }
 
                         @if(product.img2 != "null"){
-                            <img class="shadow mb-2" (click)="principalImg = product.img2" src="{{product.img2}}" width="80%;height;" alt="">
+                            <img class="shadow mb-2 img_min rounded-2 border m-1" (click)="principalImg = product.img2" style="cursor: pointer;" src="{{product.img2}}" alt="">
                         }
 
                         @if(product.img3 != "null"){
-                            <img class="shadow mb-2" (click)="principalImg = product.img3" src="{{product.img3}}" width="80%;height;" alt="">
+                            <img class="shadow mb-2 img_min rounded-2 border m-1" (click)="principalImg = product.img3" style="cursor: pointer;" src="{{product.img3}}" alt="">
                         }
 
                         @if(product.img4 != "null"){
-                            <img class="shadow mb-2" (click)="principalImg = product.img4" src="{{product.img4}}" width="80%;height;" alt="">
+                            <img class="shadow mb-2 img_min rounded-2 border m-1" (click)="principalImg = product.img4" style="cursor: pointer;" src="{{product.img4}}" alt="">
                         }
 
                     }
                 </div>
-                <div class="col">
+                <div class="col mt-2 mb-2">
                     @if(principalImg != ""){
-                         <img src="{{principalImg}}" width="80%;height:100px!important;" alt="">
+                         <img class="border shadow rounded-3 mx-auto d-block img_max" src="{{principalImg}}" style="width:80%;height:500px!important;" alt="">
                     }@else{
-                        <img src="../../../assets/products/tenis.avif" width="80%;height:100px!important;" alt="">
+                         <img class="border shadow rounded-3 mx-auto d-block img_max" src="../../../assets/products/tenis.avif" style="width:80%;height:500px!important;" alt="">
                     }
                 </div>
             </div>  
@@ -36,19 +36,19 @@
         </div>
 
         <div class="col-md-4">
-            <div class="bg_lightGray p-3">
-                <small class="text-secondary">CODE ND999SCS</small>
-                <div class="text-start p-3">
+            <div class="bg_lightGray mt-2 p-4">
+                <div class="text-start">
                     <div class="position-relative">
                         <div class="position-absolute top-0 end-0">
-                            <button class="btn btn-danger rounded-5"><i class="fa-regular fa-heart"></i></button>
+                            <button class="btn btn-danger" style="border-radius: 100%;"><i class="fa-regular fa-heart"></i></button>
                         </div>
                     </div>
+                    
+                    <small class="text-secondary">CODE ND999SCS</small>
 
                     <div class="row mb-2 text-start">
                         <h5>Tenis Clasic - Lacoste Basico</h5>
                         <h3>$ 00.00</h3>
-                        <span class="btn border-0 text-primary">Ver los medios de pago</span>
                     </div>
 
                     <div class="row mb-2">
@@ -85,44 +85,41 @@
                         </div>
                     </div>
             
-
                     <div class="compra text-center mt-4">
                         <div class="input-group mb-2">
                             <select class="form-select form-select-sm" style="border-radius: 10px 0px 0px 10px;">
-                                <option selected>Quantity</option>
+                                <option value="" selected>Quantity</option>
                                 <option value="1">1</option>
                                 <option value="2">2</option>
                                 <option value="3">3</option>
                                 <option value="4">4</option>
                                 <option value="5">5</option>
                             </select>
-                            <span class="input-group-text btn btn-dark"><i class="fa-solid fa-cart-plus"></i> Add to cart</span>
+                            <span class="input-group-text btn btn-dark text-light"><i class="fa-solid fa-cart-plus"></i> Add to cart</span>
                         </div>
                         <button class="btn btn-outline-dark rounded-2"><i class="fa-solid fa-dollar"></i> Buy now</button>
                     </div>
+
+                    <h6 class="mt-4 mb-2">Formas de Envio</h6>
+
+                    <div class="row rounded-2 shadow p-1 mb-2 push">
+                        <div class="col"><p style="font-size: 13px;" class="text-secondary">Envio Inmediato <b class="text-success">$ 100.00</b></p></div>
+                        <div class="col-md-2 text-end text-primary"><i class="fa-solid fa-truck-fast"></i></div>
+                    </div>
+
+                    <div class="row rounded-2 shadow p-1 mb-2 push">
+                        <div class="col"><p style="font-size: 13px;" class="text-secondary">Envio Regular <b class="text-success">Gratis</b></p></div>
+                        <div class="col-md-2 text-end text-primary"><i class="fa-regular fa-clock"></i></div>
+                    </div>
+
+                    <small class="text-secondary" style="font-size: 10px;">VENDEDOR DJK-SNIKERS</small>
                 </div>
-            </div>
-
-            <div class="bg_lightGray p-4">
-                <h6 class="mb-2">Formas de Envio</h6>
-
-                <div class="row rounded-2 shadow p-2 mb-2 push">
-                    <div class="col"><p>Envio Inmediato <b class="text-success">$ 100.00</b></p></div>
-                    <div class="col-md-2 text-end text-primary"><i class="fa-solid fa-truck-fast"></i></div>
-                </div>
-
-                <div class="row rounded-2 shadow p-2 mb-2 push">
-                    <div class="col"><p>Envio Regular <b class="text-success">Gratis</b></p></div>
-                    <div class="col-md-2 text-end text-primary"><i class="fa-regular fa-clock"></i></div>
-                </div>
-
-                <small class="text-secondary">VENDEDOR DJK-SNIKERS</small>
             </div>
         </div>
     </div>
 
     <div class="row">
-        <div class="col-md-8">
+        <div class="col-md-8 mt-3">
             <h6>Opiniones del producto</h6>
             <div class="row">
                 <div class="col-md-4">
@@ -177,12 +174,12 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-4">
-                <img src="../../../assets/products/tarjets.jpg" style="width: 80%;" alt="">
+        <div class="col-md-4 d-none d-md-block">
+            <img src="../../../assets/products/tarjets.jpg" style="width: 80%;" alt="">
         </div>
     </div>
 
     <div class="row">
-        <app-products ></app-products>
+        <app-products></app-products>
     </div>
 </div>

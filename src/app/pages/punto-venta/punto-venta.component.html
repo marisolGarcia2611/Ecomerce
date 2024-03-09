@@ -1,57 +1,6 @@
-<div class="bg-light">
-    <button class="btn border-0 text-danger"><i class="fa-solid fa-xmark"></i> Cancelar</button>
-</div>
-
-<style>
-    .bloque1{height: 68%;}
-    .bloque2{height: 32%;}
-    .pd_responsive{padding: 50px;}
-    .size_scroll1{height: 50vh;}
-    .size_scroll2{height: 40vh;}
-    .size_scroll3{height: 64vh;}
-    
-    
-     @media screen and (max-width:2000px) { 
-        .principal_position{position: fixed;margin: 0px!important;height: 100vh!important;width: 100%!important;right: 0;}
-        .bloque1{height: 70%;}
-        .bloque2{height: 32%;}
-        .pd_responsive{padding: 50px;}
-        .size_scroll1{height: 50vh;}
-        .size_scroll2{height: 40vh;}
-    }
-
-    @media screen and (max-width:1050px) { 
-        .bloque1{height: 62%;}
-        .bloque2{height: 40%;}
-        .pd_responsive{padding: 30px;}
-        .size_scroll1{height: 40vh;}
-        .size_scroll2{height: 25vh;}
-    }
-
-
-    @media screen and (max-width:1000px) { 
-        .principal_position{position: fixed;margin: 0px!important;height: 100vh!important;width: 100%!important;right: 0;}
-        .bloque1{height: 78%;}
-        .bloque2{height: 22%;}
-        .pd_responsive{padding: 40px;}
-        .size_scroll1{height: 62vh;}
-        .size_scroll2{height: 50vh;}
-    }
-
-
-    @media screen and (max-width:750px) { 
-        .principal_position{position: absolute;margin: 0px!important;height: 100vh!important;width: 100%!important;right: 0;}
-        .bloque1{height: 70%;}
-        .bloque2{height: 32%;}
-        .pd_responsive{padding: 50px;}
-        .size_scroll1{height: 50vh;}
-        .size_scroll2{height: 40vh;}
-    }
-
-    @media screen and (max-width:450px) { 
-        .pd_responsive{padding: 20px;}
-    }
-</style>
+<!-- <div class="bg-light text-end">
+    <button class="btn border-0 text-danger" style="font-size: 13px;"><i class="fa-solid fa-xmark"></i> Cancelar</button>
+</div> -->
 
 <div class="principal_position">
     <div class="row bloque1">
@@ -60,8 +9,8 @@
             <h6>Busqueda</h6>
     
             <div class="form-floating mb-1">
-                <input type="email" class="form-control rounded-5" id="floatingInput" placeholder="name@example.com">
-                <label for="floatingInput">Search <i class="fa-solid fa-magnifying-glass"></i></label>
+                <input type="email" class="form-control rounded-5" id="floatingInput" style="height: 40px!important;" placeholder="name@example.com">
+                <label for="floatingInput" style="font-size: 10px;margin-top: -10px;">Search <i class="fa-solid fa-magnifying-glass"></i></label>
             </div>
     
             
@@ -73,20 +22,20 @@
                         <div class="card-body p-2">
                             <div class="row">
                                 <div class="col-md-4"> 
-                                    <img class="img_responsive" src="../../../assets/products/adidas.webp" style="width: 100px; height: 100px; object-fit: cover;" alt="porduct">
+                                    <img class="img_responsive" src="../../../assets/products/adidas.webp" style="width: 80px; height: 80px; object-fit: cover;" alt="porduct">
                                 </div>
                             
                                 <div class="col" style="padding: 10px 10px 0px 0px;"> 
-                                    <span>Tenis Clasic - Lacoste Basico</span>  
-                                    <h5>$150.00</h5>
+                                    <span style="font-size: 12px;">Tenis Clasic - Lacoste Basico</span>  
+                                    <h6>$150.00</h6>
                                 </div>
                             </div>
 
-                            <div class="row lista">
+                            <div class="row busqueda">
                                 <div class="col input-group mb-2">
-                                    <span class="input-group-text btn btn-outline-dark p-2"><i class="fa-solid fa-plus"></i></span>
-                                    <input class="form-control border-dark" placeholder="00" type="number">
-                                    <span class="input-group-text btn btn-outline-dark p-2"><i class="fa-solid fa-minus"></i></span>
+                                    <span class="input-group-text btn btn-outline-dark p-1"><i class="fa-solid fa-plus"></i></span>
+                                    <input class="form-control border-dark p-1" placeholder="00" type="number">
+                                    <span class="input-group-text btn btn-outline-dark p-1"><i class="fa-solid fa-minus"></i></span>
                                 </div>
 
                                 <div class="col">
@@ -114,23 +63,17 @@
                         <img src="../../../assets/icos/1.png" style="max-height: 100px;max-width: 100px;object-fit: cover;" alt="product">
                     </div>
             
-                    <div class="col-md-4 text-start">
+                    <div class="col-md-3 text-start">
                         <h6>Caje de Vale</h6>
                         <h5>$30.00 <b style="font-size: 10px;" class="text-secondary">(Importe)</b></h5>
+                        <button class="btn btn-dark" style="font-size: 11px;" data-bs-target="#canjeValeModal" data-bs-toggle="modal">Comenzar Canje</button>
                     </div>
             
-                    <div class="col text-start">
-                        <div>
-                            <button class=" btn btn-dark" data-bs-target="#canjeValeModal" data-bs-toggle="modal">Comenzar Canje</button>
-                        </div>
-                    </div>
-            
-            
-                    
-                    <div class="col-md-2 text-end">
+                    <div class="col text-end">
                         <h6>                                
                             <button type="button" class="btn text-dark"><i class="fa-solid fa-trash"></i></button>
                         </h6>
+                        <span style="font-size: 10px;" class="text-secondary"> CODE JIW233132</span>
                     </div>
                 </div>
                 
@@ -140,9 +83,14 @@
     
         <!-- Saldo de Compra -->
         <div class="col-md-3 bg-dark text-light p-3">
+            <div class="position-relative">
+                <div class="position-absolute top-0 end-0">
+                    <button class="btn border-0 text-danger fw-bold p-0 push" style="font-size: 13px;margin-top: -5px;"><i class="fa-solid fa-xmark"></i> Cancelar</button>
+                </div>
+            </div>
             <h6>Saldo De Compra</h6>
-            <div  class="mt-2 mb-3  p-2 container">
-                <div class="scrollcardDark size_scroll2">
+            <div  class="mt-1 mb-1  p-2 container">
+                <div class="scrollcardDark size_scroll2 saldo">
                     <div class="row">
                         <div class="col-md-8"><p class="text-truncate fw-light">Blusa Denim <b class="fw-bold text-success">x3</b></p></div>
                         <div class="col-md-4"><p class="text-truncate fw-bold">$150.00</p></div>
@@ -171,16 +119,16 @@
             
             <div class="container">
                 <div class="row">
-                    <div class="col"><h5 class="text-truncate fw-light">Sub Total&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp; $150.00</h5></div>
+                    <div class="col"><h6 class="text-truncate fw-light">Sub Total&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp; $150.00</h6></div>
                 </div>
                 <div class="row">
-                    <div class="col"><h5 class="text-truncate fw-light">Descuento&nbsp; &nbsp;&nbsp; &nbsp; $150.00</h5></div>
+                    <div class="col"><h6 class="text-truncate fw-light">Descuento&nbsp; &nbsp;&nbsp; &nbsp; $150.00</h6></div>
                 </div>
                 <div class="row">
-                    <div class="col"><h5 class="text-truncate fw-light">Iva&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; $150.00</h5></div>
+                    <div class="col"><h6 class="text-truncate fw-light">Iva&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; $150.00</h6></div>
                 </div>
                 <div class="row">
-                    <div class="col"><h3 class="text-truncate">Total&nbsp; &nbsp; $150.00</h3></div>
+                    <div class="col"><h5 class="text-truncate">Total&nbsp; &nbsp;  &nbsp;&nbsp; &nbsp;&nbsp;  $150.00</h5></div>
                 </div>
             </div>
         </div>
@@ -191,39 +139,39 @@
         <div class="col bg-grayLight">
             <div class="row container">
                 <div class="col-md-2 col-3">
-                    <img class="img_responsive" src="../../../assets/products/adidas.webp" style="width: 120px;height: 120px;" alt="porduct">
+                    <img class="img_responsive" src="../../../assets/products/adidas.webp" style="width: 120px;height: 120px;margin-top: -10px;" alt="porduct">
                 </div>
                 
+                <div class="col-md-3 mt-2">
+                    <small style="font-size: 10px;" class="text-secondary">CODE 934HIJFAS9</small>
+                    <h6>Tenis Clasic - Lacoste Basico</h6>
+                    <div style="margin-top: -8px!important;">
+                        <h5>$150.00</h5>
+                    </div>
+                </div>
 
                 <div class="col">
-                    <div class="row compra text-start">
-                        <div class="col-md-5 col-5 mt-3">
-                            <h6>Tenis Clasic - Lacoste Basico</h6>
-                            <h4>$150.00</h4>
-                            <span class="text-secondary">CODE 934HIJFAS9</span>
+                    <div class="row compra text-start mt-3 mb-2 lista">
+                        <div class="col mt-2">
+                            <select class="form-select border-dark" name="" required>
+                                <option value="SM">SM</option>
+                                <option value="MD">MD</option>
+                                <option value="LG">LG</option>
+                                <option value="XL">XL</option>
+                            </select>
                         </div>
-                        <div class="col-md-6 col-7 mt-3 mb-2">
-                            <div class="mt-2">
-                                <select class="form-select border-dark" name="" required>
-                                    <option value="SM">SM</option>
-                                    <option value="MD">MD</option>
-                                    <option value="LG">LG</option>
-                                    <option value="XL">XL</option>
-                                </select>
-                            </div>
 
-                            <div class="input-group mt-3">
-                                <span class="input-group-text btn btn-outline-dark p-2"><i class="fa-solid fa-plus"></i></span>
-                                <input class="form-control border-dark" placeholder="00" type="number">
-                                <span class="input-group-text btn btn-outline-dark p-2"><i class="fa-solid fa-minus"></i></span>
-                            </div>
+                        <div class="col input-group mt-2">
+                            <span class="input-group-text btn btn-outline-dark p-2"><i class="fa-solid fa-plus"></i></span>
+                            <input class="form-control border-dark" placeholder="00" type="number">
+                            <span class="input-group-text btn btn-outline-dark p-2"><i class="fa-solid fa-minus"></i></span>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-md-4 text-end">
                     <div class="mb-2 mt-3">
-                        <input type="number" class="form-control rounded-5 fs-5" id="floatingInput" placeholder="Add for Key Code">
+                        <input type="number" class="form-control rounded-5 " id="floatingInput" placeholder="Add for Key Code">
                     </div>
 
                     <button class="btn btn-dark rounded-2 mb-2" style="font-size: 12px;"><i class="fa-solid fa-plus"></i> Agregar</button>                
@@ -256,6 +204,13 @@
                     <div class="text-center p-5 rounded-5 push btn border-0" style="width: 100%;background-color: rgb(243, 243, 243);" data-bs-target="#pagoEfectivoModal" data-bs-toggle="modal">
                         <h1 style="color: rgb(0, 168, 70);font-size: 100px;"><i class="fa-solid fa-dollar"></i></h1>
                         <span class="fw-light fs-5" style="color: rgb(0, 168, 70);">Efectivo</span>
+                    </div>
+                </div>
+
+                <div class="col p-2">
+                    <div class="text-center p-5 rounded-5 btn border-0 push" style="width: 100%;background-color: rgb(240, 240, 240);" data-bs-target="#canjeValeModal" data-bs-toggle="modal">
+                        <h1 style="color: rgb(70, 70, 70);font-size: 100px;"><i class="fa-solid fa-ticket"></i></h1>
+                        <span class="fw-light fs-5" style="color: rgb(70, 70, 70);">Vale</span>
                     </div>
                 </div>
 
@@ -351,7 +306,7 @@
   <div class="modal fade" id="canjeValeModal" aria-hidden="false" aria-labelledby="medioPagoModalLabel" tabindex="-1">
     <div class="modal-dialog modal-fullscreen">
       <div class="modal-content">
-        <div class="modal-header border-0 m-0">
+        <div class="modal-header border-0 m-0" style="margin-top: -18px!important;padding: 20px 20px 10px 20px;">
           <h2 class="modal-title fw-light" id="medioPagoModalLabel">Canje de vale</h2>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
@@ -360,11 +315,27 @@
             <div class="row">
                 <div class="col-2">
                   <nav id="navbar-example3" class="h-100 flex-column align-items-stretch pe-4 border-end">
-                    <nav class="nav nav-pills flex-column">
-                      <button class="nav-link border-primary rounded-2" (click)="datosVale = 1">Datos de Vale</button>
-                      <button class="nav-link border-primary rounded-2" >Captura Cliente</button>
-                      <button class="nav-link border-primary rounded-2" >Subir Archivos</button>
-                      <button class="nav-link border-primary rounded-2" >Canje</button>
+                    <nav class="nav nav-pills flex-column text-start" style="text-align: start!important;">
+                        @if(datosVale == 1){
+                            <button class="nav-link text-primary rounded-2 text-start"><i class="fa-solid fa-chevron-right"></i> Datos de Vale</button>
+                        }@else{
+                            <button class="nav-link text-secondary rounded-2 text-start pointer_none">Datos de Vale</button>
+                        }
+                        @if(capturaCli == 1){   
+                            <button class="nav-link text-primary rounded-2 text-start"><i class="fa-solid fa-chevron-right"></i> Captura Cliente</button>
+                        }@else{
+                            <button class="nav-link text-secondary rounded-2 text-start pointer_none">Captura Cliente</button>
+                        }
+                        @if(subirDoc == 1){
+                            <button class="nav-link text-primary rounded-2 text-start"><i class="fa-solid fa-chevron-right"></i> Subir Archivos</button>
+                        }@else{
+                            <button class="nav-link text-secondary rounded-2 text-start pointer_none">Subir Archivos</button>
+                        }
+                        @if(canjeVal == 1){
+                            <button class="nav-link text-primary rounded-2 text-start"><i class="fa-solid fa-chevron-right"></i> Canje</button>
+                        }@else{
+                            <button class="nav-link text-secondary rounded-2 text-start pointer_none">Canje</button>
+                        }
                     </nav>
                   </nav>
                 </div>
@@ -373,34 +344,34 @@
                   <div data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-smooth-scroll="true" class="scrollspy-example-2" tabindex="0">
                     @if(datosVale == 1){
                         <app-datos-vale></app-datos-vale>
-                        <div class="text-end">
-                            <button class="btn btn-dark" (click)="datosVale = 0;capturaCli = 1">Enviar</button>
+                        <div class="text-end mt-3 mb-2">
+                            <button class="btn btn-dark btn_enviar" (click)="datosVale = 0;capturaCli = 1">Seguir <i class="fa-solid fa-chevron-right"></i></button>
                         </div>
                     }
 
                     @if(capturaCli == 1){
                         <app-captura-cliente></app-captura-cliente>
-                        <div class="text-end">
-                            <button class="btn btn-dark" (click)="capturaCli = 0;subirDoc = 1">Enviar</button>
+                        <div class="text-end mt-3 mb-2">
+                            <button class="btn btn-dark btn_enviar" (click)="capturaCli = 0;subirDoc = 1">Seguir <i class="fa-solid fa-chevron-right"></i></button>
                         </div>
                     }
 
                     @if(subirDoc == 1){
                         <app-subir-archivos></app-subir-archivos>
-                        <div class="text-end">
-                            <button class="btn btn-dark" (click)="subirDoc = 0;canjeVal = 1">Enviar</button>
+                        <div class="text-end mt-3 mb-2">
+                            <button class="btn btn-dark btn_enviar" (click)="subirDoc = 0;canjeVal = 1">Seguir <i class="fa-solid fa-chevron-right"></i></button>
                         </div>
                     }
 
                     @if(canjeVal == 1){
                         <app-canje></app-canje>
-                        <div class="text-end">
-                            <button class="btn btn-dark" data-bs-dismiss="modal" aria-label="Close">Enviar</button>
+                        <div class="text-end mt-3 mb-2">
+                            <button class="btn btn-dark btn_enviar" data-bs-dismiss="modal" aria-label="Close"><i class="fa-solid fa-check"></i> Terminar Desembolso</button>
                         </div>
                     }
                   </div>
                 </div>
-              </div>
+            </div>
         </div>
       </div>
     </div>

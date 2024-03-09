@@ -1,34 +1,54 @@
 <div class="container">
     <form>
-        <div class="mb-3">
-          <label  class="form-label">Distribuidor</label>
-          <input type="text" class="form-control" id="" placeholder="name or code">
+      <div class="row">
+        <div class="col-md-7 p-4">
+            <div class="mb-3">
+              <label  class="form-label">Distribuidor</label>
+              <input type="text" class="form-control" id="" placeholder="name or code">
+            </div>
+    
+            <div class="row">
+                <div class="col mb-3">
+                    <label  class="form-label">Folio</label>
+                    <input type="text" class="form-control" id="" placeholder="0000">
+                  </div>
+          
+                  <div class="col mb-3">
+                    <label  class="form-label">Plazo</label>
+                    <select class="form-select" name="" id="">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+                  </div>
+    
+                  <div class="col mb-3">
+                    <label  class="form-label">Cantidad</label>
+                    <select class="form-select" name="" id="">
+                        <option value="1">$1000.00</option>
+                        <option value="2">$2000.00</option>
+                        <option value="3">$3000.00</option>
+                    </select>
+                  </div>
+            </div>
         </div>
 
-        <div class="row">
-             <div class="col mb-3">
-                <label  class="form-label">Folio</label>
-                <input type="text" class="form-control" id="" placeholder="">
+        <div class="col-md-5">
+           <div class="row text-center shadow rounded-2 p-5">
+              <div style="margin-top: -20px;"><h5 class="fw-light">Lorena Medez Santiago</h5><hr></div>
+            
+              <div class="p-3 mb-2">   
+                <img src="../../../../assets/perfil.png" style="width: 200px;height: 200px;object-fit: cover;" class="rounded mx-auto d-block" alt="...">
               </div>
-      
-              <div class="col mb-3">
-                <label  class="form-label">Plazo</label>
-                <select class="form-select" name="" id="">
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                </select>
+             
+              <div class="card">
+                <div class="p-2">
+                <img src="../../../../assets/firma.jpg" style="width:100px;height: 50px;object-fit: cover;" class="rounded mx-auto d-block" alt="...">
+                </div>
+                <small>Firma</small>
               </div>
-
-              <div class="col mb-3">
-                <label  class="form-label">Cantidad</label>
-                <select class="form-select" name="" id="">
-                    <option value="1">$1000.00</option>
-                    <option value="2">$2000.00</option>
-                    <option value="3">$3000.00</option>
-                </select>
-              </div>
+           </div>
         </div>
-
-      </form>
+      </div>
+    </form>
 </div>
